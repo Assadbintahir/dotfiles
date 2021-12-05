@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " neovim themes
 Plug 'glepnir/oceanic-material'
+let g:oceanic_material_transparent_background=1
 Plug 'arcticicestudio/nord-vim'
 Plug 'haystackandroid/carbonized'
 
@@ -90,7 +91,6 @@ set autoindent smartindent
 " for carbonized theme, set to carbonized-dark
 set background=dark " disable this for themes other than oceanic_material
 colorscheme oceanic_material
-
 
 " set filetypes as typescriptreact
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
