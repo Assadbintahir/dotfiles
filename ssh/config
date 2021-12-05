@@ -1,0 +1,11 @@
+# 10Pearls account
+Host github.com
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_ed25519
+   
+# Personal Account
+Host personal.github.com
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_ed25519_p

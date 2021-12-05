@@ -1,0 +1,9 @@
+{
+	"eslint.autoFixOnSave": true,
+	"eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+	"coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  	"tsserver.formatOnType": false,
+  	"coc.preferences.formatOnType": true,
+	"prettier.eslintIntegration": false,
+	"diagnostic.checkCurrentLine": true
+}
