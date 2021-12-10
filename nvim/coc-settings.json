@@ -1,9 +1,37 @@
 {
-	"eslint.autoFixOnSave": true,
-	"eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-	"coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-  	"tsserver.formatOnType": false,
-  	"coc.preferences.formatOnType": true,
-	"prettier.eslintIntegration": false,
-	"diagnostic.checkCurrentLine": true
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "json",
+    "css",
+    "scss",
+    "go"
+  ],
+  "tsserver.formatOnType": false,
+  "coc.preferences.formatOnType": true,
+  "prettier.eslintIntegration": false,
+  "diagnostic.checkCurrentLine": true,
+  "suggest.noselect": false,
+  "diagnostic.errorSign": "✘",
+  "diagnostic.infoSign": "?",
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"]
+    }
+  },
+  "go.goplsOptions": {
+    "staticcheck": true
+  }
 }
