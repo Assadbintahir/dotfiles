@@ -58,6 +58,7 @@ sudo pacman -S vlc
 sudo pacman -S docker
 sudo pacman -S docker-compose
 sudo pacman -S mkcert
+sudo pacman -S homebank
 
 sudo flatpak install flathub nz.mega.MEGAsync
 sudo flatpak install flathub md.obsidian.Obsidian
