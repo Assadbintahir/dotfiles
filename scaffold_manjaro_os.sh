@@ -45,11 +45,14 @@ sudo pacman -S vlc
 sudo pacman -S docker
 sudo pacman -S docker-compose
 sudo pacman -S mkcert
-sudo pacman -S homebank
+sudo pacman -S gnucash
+sudo pacman -S gtk-engine-murrine
+sudo pacman -S gnome-browser-connector
 
 flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub us.zoom.Zoom
 flatpak install flathub com.obsproject.Studio
+flatpak install flathub com.mattjakeman.ExtensionManager
 
 yay -S microsoft-edge-stable-bin
 yay -S cryptomator-bin
@@ -59,3 +62,6 @@ yay -S teams
 yay -S visual-studio-code-bin
 yay -S xdman
 yay -S ttf-ms-fonts
+yay -S ulauncher
+yay -S gpick
+
