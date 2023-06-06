@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Point to the Fastest Mirror
-sudo pacman-mirrors --fasttrack
-
 # update your system
 sudo pacman -Syyu
+
+# install pamac (GUI package manager)
+yay -S pamac-all
 
 # Enable SSD TRIM
 sudo systemctl enable fstrim.timer
@@ -14,14 +14,10 @@ sudo systemctl start fstrim.timer
 sudo systemctl status fstrim.timer
 
 #install git
-sudo pacman -S git curl
+sudo pacman -S git curl nvidia-inst
 
-# install openvpn and network manager
-sudo pacman -S openvpn networkmanager-openvpn
-
-# install AUR and pacman helper yay
-sudo pacman -S yay
-sudo pacman -S base-devel
+# install system apps
+sudo pacman -S openvpn networkmanager-openvpn base-devel tmux zsh
 
 # install neovim
 sudo pacman -S neovim
@@ -34,18 +30,9 @@ sudo pacman -S python-pip
 # install py neovim
 pip install pynvim
 
-# install snapd
-sudo pacman -S snapd
-sudo systemctl enable --now snapd.socket
-
-# install flatpak
-sudo pacman -S flatpak libpamac-flatpak-plugin
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
 # install user applications
 sudo pacman -S libreoffice-still
 sudo pacman -S flameshot
-sudo pacman -S gnome-shell-extension-pop-shell
 sudo pacman -S alacritty
 sudo pacman -S bitwarden
 sudo pacman -S clementine
@@ -60,15 +47,13 @@ sudo pacman -S docker-compose
 sudo pacman -S mkcert
 sudo pacman -S homebank
 
-sudo flatpak install flathub nz.mega.MEGAsync
-sudo flatpak install flathub md.obsidian.Obsidian
-sudo flatpak install flathub us.zoom.Zoom
+flatpak install flathub md.obsidian.Obsidian
+flatpak install flathub us.zoom.Zoom
+flatpak install flathub com.obsproject.Studio
 
-sudo snap install slack --classic
-
+yay -S microsoft-edge-stable-bin
 yay -S cryptomator-bin
 yay -S google-chrome
-yay -S microsoft-edge-stable-bin
 yay -S rclone rclone-browser
 yay -S teams
 yay -S visual-studio-code-bin

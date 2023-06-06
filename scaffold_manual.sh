@@ -23,14 +23,8 @@ source ~/.gvm/scripts/gvm
 gvm install go1.17.5 -B
 gvm use go1.17.5 --default
 
-# configure orchis theme
-cd Downloads
-git clone https://github.com/vinceliuice/Orchis-theme.git
-./install.sh -t grey --tweaks compact
-./install.sh -t grey --tweaks primary
-./install.sh -t green --tweaks compact
-./install.sh -t green --tweaks primary
-cd
+# configure theme
+
 
 # install docker and docker-compose
 sudo systemctl start docker.service
