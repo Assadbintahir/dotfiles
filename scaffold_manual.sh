@@ -9,7 +9,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 cd
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local 
+cp .tmux/.tmux.conf.local .
 
 # install nvm & node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | zsh
@@ -31,14 +31,12 @@ gvm use go1.17.5 --default
 
 # configure theme
 
-
 # install docker and docker-compose
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
 sudo usermod -aG docker $USER
 newgrp docker
 
-# setup portainer 
+# setup portainer
 docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
-
