@@ -11,6 +11,11 @@ git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 
+#uncomment following in ~/.tmux.conf.local
+#set -g @plugin 'tmux-plugins/tmux-resurrect' 
+#set -g @plugin 'tmux-plugins/tmux-continuum' 
+#set -g @continuum-restore 'on'
+
 # install nvm & node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | zsh
 source ~/.zshrc
