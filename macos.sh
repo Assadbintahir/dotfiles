@@ -9,3 +9,4 @@ brew install bitwarden
 brew install --cask vlc
 brew install wget
 brew install tmux
+brew install age
