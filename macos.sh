@@ -11,3 +11,4 @@ brew install wget
 brew install tmux
 brew install age
 brew install bruno
+brew install --cask alt-tab
