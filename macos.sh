@@ -12,3 +12,6 @@ brew install tmux
 brew install age
 brew install bruno
 brew install --cask alt-tab
+
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
