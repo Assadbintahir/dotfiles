@@ -15,3 +15,5 @@ brew install --cask alt-tab
 
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
+
+# office: https://github.com/alsyundawy/Microsoft-Office-For-MacOS
