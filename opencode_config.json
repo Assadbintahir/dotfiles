@@ -16,14 +16,14 @@
           "name": "Gemma 4 E4B Q8 Local",
           "limit": {
             "context": 65536,
-            "output": 4096
+            "output": 12288
           }
         },
         "omnicoder-9b-q8-local": {
                   "name": "OmniCoder 9B Q8 Local",
                   "limit": {
                     "context": 65536,
-                    "output": 4096
+                    "output": 12288
             }
         }
       }
