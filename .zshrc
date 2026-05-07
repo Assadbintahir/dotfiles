@@ -112,3 +112,5 @@ export NVM_DIR=~/.nvm
 
 
 [[ -s "/home/asad/.gvm/scripts/gvm" ]] && source "/home/asad/.gvm/scripts/gvm"
+
+alias gnucash='WEBKIT_DISABLE_COMPOSITING_MODE=1 flatpak run org.gnucash.GnuCash'
